@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Equity Scanner Pro</title>
 
+<style>
+body{
+background:#0f172a;
+color:white;
+font-family:Arial,sans-serif;
+margin:0;
+padding:15px;
+}
+
+.header{
+text-align:center;
+margin-bottom:20px;
+}
+
+.card{
+background:#1e293b;
+padding:15px;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#16a34a;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+}
+
+.stock{
+padding:10px;
+border-bottom:1px solid #334155;
+}
+
+.buy{
+color:#22c55e;
+font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+<h1>📈 AI Equity Scanner Pro</h1>
+<p>NSE + SME + ETF Scanner</p>
+</div>
+
+<div class="card">
+<h2>Market Status</h2>
+<p>Nifty : 🟢 Bullish</p>
+<p>Bank Nifty : 🟢 Bullish</p>
+</div>
+
+<button onclick="scan()">🚀 Scan Market</button>
+
+<div class="card">
+<h2>Top Strong Buy</h2>
+
+<div id="stocks">
+
+Waiting for Scan...
+
+</div>
+
+</div>
+
+<script>
+
+function scan(){
+
+document.getElementById("stocks").innerHTML=`
+
+<div class="stock buy">
+RELIANCE
+</div>
+
+<div class="stock buy">
+HDFCBANK
+</div>
+
+<div class="stock buy">
+ICICIBANK
+</div>
+
+<div class="stock buy">
+BEL
+</div>
+
+<div class="stock buy">
+HAL
+</div>
+
+`;
+
+}
+
+</script>
+
+</body>
+</html>
