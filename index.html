@@ -1,90 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Equity Scanner</title>
-</head>
-<body style="background:#0f172a;color:white;font-family:Arial;text-align:center;padding:40px;">
+<title>AI Equity Scanner Pro</title>
 
-<h1>✅ AI Equity Scanner</h1>
+<style>
+body{
+    margin:0;
+    padding:20px;
+    background:#0f172a;
+    color:white;
+    font-family:Arial,sans-serif;
+}
 
-<p>GitHub Pages is Working!</p>
+.header{
+    text-align:center;
+}
 
-<button onclick="alert('Scanner Working!')">
-Scan Market
-</button>
+.card{
+    background:#1e293b;
+    border-radius:12px;
+    padding:15px;
+    margin-top:20px;
+}
 
-</body>
-</html>
+button{
+    width:100%;
+    padding:15px;
+    font-size:18px;
+    font-weight:bold;
+    border:none;
+    border-radius:10px;
+    background:#16a34a;
+    color:white;
+    cursor:pointer;
+}
+
 .stock{
-padding:10px;
-border-bottom:1px solid #334155;
+    padding:10px;
+    border-bottom:1px solid #334155;
 }
 
 .buy{
-color:#22c55e;
-font-weight:bold;
+    color:#22c55e;
+    font-weight:bold;
+}
+
+.footer{
+    text-align:center;
+    color:#94a3b8;
+    margin-top:25px;
 }
 </style>
-
 </head>
+
 <body>
 
 <div class="header">
 <h1>📈 AI Equity Scanner Pro</h1>
-<p>NSE + SME + ETF Scanner</p>
+<p>NSE • SME • ETF Scanner</p>
 </div>
 
 <div class="card">
 <h2>Market Status</h2>
-<p>Nifty : 🟢 Bullish</p>
-<p>Bank Nifty : 🟢 Bullish</p>
+<p>📊 Nifty : 🟢 Bullish</p>
+<p>🏦 Bank Nifty : 🟢 Bullish</p>
 </div>
 
-<button onclick="scan()">🚀 Scan Market</button>
+<button onclick="scanMarket()">🚀 Scan Market</button>
 
 <div class="card">
 <h2>Top Strong Buy</h2>
 
-<div id="stocks">
-
+<div id="result">
 Waiting for Scan...
+</div>
 
 </div>
 
+<div class="footer">
+Version 1.0<br>
+Built by Dharmrajsinh
 </div>
 
 <script>
+function scanMarket(){
 
-function scan(){
+document.getElementById("result").innerHTML=`
 
-document.getElementById("stocks").innerHTML=`
-
-<div class="stock buy">
-RELIANCE
-</div>
-
-<div class="stock buy">
-HDFCBANK
-</div>
-
-<div class="stock buy">
-ICICIBANK
-</div>
-
-<div class="stock buy">
-BEL
-</div>
-
-<div class="stock buy">
-HAL
-</div>
+<div class="stock buy">✅ RELIANCE</div>
+<div class="stock buy">✅ HDFCBANK</div>
+<div class="stock buy">✅ ICICIBANK</div>
+<div class="stock buy">✅ BEL</div>
+<div class="stock buy">✅ HAL</div>
 
 `;
 
 }
-
 </script>
 
 </body>
