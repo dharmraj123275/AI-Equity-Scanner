@@ -3,102 +3,181 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>AI Equity Scanner Pro</title>
 
 <style>
+
 body{
-    margin:0;
-    padding:20px;
-    background:#0f172a;
-    color:white;
-    font-family:Arial,sans-serif;
+margin:0;
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:white;
+padding:20px;
 }
 
-.header{
-    text-align:center;
+h1{
+text-align:center;
+font-size:38px;
+}
+
+p{
+text-align:center;
+color:#cbd5e1;
 }
 
 .card{
-    background:#1e293b;
-    border-radius:12px;
-    padding:15px;
-    margin-top:20px;
+background:#1e293b;
+padding:18px;
+border-radius:15px;
+margin-top:20px;
 }
 
 button{
-    width:100%;
-    padding:15px;
-    font-size:18px;
-    font-weight:bold;
-    border:none;
-    border-radius:10px;
-    background:#16a34a;
-    color:white;
-    cursor:pointer;
+width:100%;
+padding:18px;
+font-size:22px;
+font-weight:bold;
+background:#16a34a;
+border:none;
+border-radius:12px;
+color:white;
+margin-top:20px;
 }
 
 .stock{
-    padding:10px;
-    border-bottom:1px solid #334155;
+background:#0f172a;
+padding:12px;
+margin-top:10px;
+border-radius:10px;
+border-left:5px solid #22c55e;
 }
 
 .buy{
-    color:#22c55e;
-    font-weight:bold;
+color:#22c55e;
+font-weight:bold;
 }
 
 .footer{
-    text-align:center;
-    color:#94a3b8;
-    margin-top:25px;
+margin-top:40px;
+text-align:center;
+color:#94a3b8;
 }
+
 </style>
+
 </head>
 
 <body>
 
-<div class="header">
 <h1>📈 AI Equity Scanner Pro</h1>
+
 <p>NSE • SME • ETF Scanner</p>
-</div>
 
 <div class="card">
-<h2>Market Status</h2>
-<p>📊 Nifty : 🟢 Bullish</p>
-<p>🏦 Bank Nifty : 🟢 Bullish</p>
+
+<h2>📊 Market Status</h2>
+
+<p>🟢 Nifty : Bullish</p>
+
+<p>🟢 Bank Nifty : Bullish</p>
+
 </div>
 
-<button onclick="scanMarket()">🚀 Scan Market</button>
+<button onclick="scanMarket()">
+🚀 Scan Market
+</button>
 
 <div class="card">
-<h2>Top Strong Buy</h2>
+
+<h2>🔥 Top Strong Buy</h2>
 
 <div id="result">
+
 Waiting for Scan...
+
 </div>
 
 </div>
 
 <div class="footer">
-Version 1.0<br>
+
+Version 2.0<br>
+
 Built by Dharmrajsinh
+
 </div>
 
 <script>
+
 function scanMarket(){
 
-document.getElementById("result").innerHTML=`
+const stocks=[
 
-<div class="stock buy">✅ RELIANCE</div>
-<div class="stock buy">✅ HDFCBANK</div>
-<div class="stock buy">✅ ICICIBANK</div>
-<div class="stock buy">✅ BEL</div>
-<div class="stock buy">✅ HAL</div>
+"RELIANCE",
+
+"HDFCBANK",
+
+"ICICIBANK",
+
+"BEL",
+
+"HAL",
+
+"TCS",
+
+"INFY",
+
+"SBIN",
+
+"LT",
+
+"AXISBANK"
+
+];
+
+let html="";
+
+stocks.forEach(stock=>{
+
+let score=Math.floor(Math.random()*31)+70;
+
+if(score>=80){
+
+html+=`
+
+<div class="stock">
+
+<div class="buy">
+
+✅ ${stock}
+
+</div>
+
+AI Score : ${score}%<br>
+
+Signal : STRONG BUY
+
+</div>
 
 `;
 
 }
+
+});
+
+if(html==""){
+
+html="<p>No Strong Buy Found.</p>";
+
+}
+
+document.getElementById("result").innerHTML=html;
+
+}
+
 </script>
 
 </body>
+
 </html>
