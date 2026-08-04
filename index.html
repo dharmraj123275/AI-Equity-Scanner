@@ -109,75 +109,62 @@ Built by Dharmrajsinh
 </div>
 
 <script>
+async function scanMarket() {
 
-function scanMarket(){
+const result = document.getElementById("result");
 
-const stocks=[
+result.innerHTML = "<h3>🔄 Scanning Market...</h3>";
 
-"RELIANCE",
+try{
 
-"HDFCBANK",
+const response = await fetch("stocks.json");
 
-"ICICIBANK",
-
-"BEL",
-
-"HAL",
-
-"TCS",
-
-"INFY",
-
-"SBIN",
-
-"LT",
-
-"AXISBANK"
-
-];
+const stocks = await response.json();
 
 let html="";
 
 stocks.forEach(stock=>{
 
-let score=Math.floor(Math.random()*31)+70;
+let color="#22c55e";
 
-if(score>=80){
+if(stock.signal=="SELL") color="#ef4444";
 
-html+=`
+html += `
+<div style="
+background:#111827;
+padding:15px;
+margin:12px 0;
+border-left:6px solid ${color};
+border-radius:10px;
+">
+<h3 style="color:${color};margin:0;">
+${stock.symbol}
+</h3>
 
-<div class="stock">
+<p>AI Score : ${stock.score}%</p>
 
-<div class="buy">
-
-✅ ${stock}
+<p>Signal :
+<b style="color:${color};">
+${stock.signal}
+</b>
+</p>
 
 </div>
-
-AI Score : ${score}%<br>
-
-Signal : STRONG BUY
-
-</div>
-
 `;
-
-}
 
 });
 
-if(html==""){
+result.innerHTML=html;
 
-html="<p>No Strong Buy Found.</p>";
+}
+catch(e){
+
+result.innerHTML="<h3>❌ Unable to load stocks.json</h3>";
 
 }
 
-document.getElementById("result").innerHTML=html;
-
 }
-
 </script>
-
 </body>
 
 </html>
