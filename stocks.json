@@ -1,0 +1,42 @@
+[
+  {
+    "symbol": "RELIANCE",
+    "score": 92,
+    "signal": "STRONG BUY"
+  },
+  {
+    "symbol": "TCS",
+    "score": 91,
+    "signal": "STRONG BUY"
+  },
+  {
+    "symbol": "HDFCBANK",
+    "score": 89,
+    "signal": "BUY"
+  },
+  {
+    "symbol": "SBIN",
+    "score": 87,
+    "signal": "BUY"
+  },
+  {
+    "symbol": "BEL",
+    "score": 84,
+    "signal": "BUY"
+  },
+  {
+    "symbol": "HAL",
+    "score": 83,
+    "signal": "BUY"
+  },
+  {
+    "symbol": "INFY",
+    "score": 82,
+    "signal": "BUY"
+  },
+  {
+    "symbol": "ICICIBANK",
+    "score": 81,
+    "signal": "BUY"
+  }
+]
