@@ -1,42 +1,32 @@
 [
   {
-    "symbol": "RELIANCE",
-    "score": 92,
-    "signal": "STRONG BUY"
+    "symbol":"RELIANCE",
+    "sector":"Oil & Gas",
+    "score":92,
+    "signal":"BUY"
   },
   {
-    "symbol": "TCS",
-    "score": 91,
-    "signal": "STRONG BUY"
+    "symbol":"TCS",
+    "sector":"IT",
+    "score":91,
+    "signal":"BUY"
   },
   {
-    "symbol": "HDFCBANK",
-    "score": 89,
-    "signal": "BUY"
+    "symbol":"HDFCBANK",
+    "sector":"Banking",
+    "score":89,
+    "signal":"BUY"
   },
   {
-    "symbol": "SBIN",
-    "score": 87,
-    "signal": "BUY"
+    "symbol":"SBIN",
+    "sector":"Banking",
+    "score":87,
+    "signal":"BUY"
   },
   {
-    "symbol": "BEL",
-    "score": 84,
-    "signal": "BUY"
-  },
-  {
-    "symbol": "HAL",
-    "score": 83,
-    "signal": "BUY"
-  },
-  {
-    "symbol": "INFY",
-    "score": 82,
-    "signal": "BUY"
-  },
-  {
-    "symbol": "ICICIBANK",
-    "score": 81,
-    "signal": "BUY"
+    "symbol":"BEL",
+    "sector":"Defence",
+    "score":84,
+    "signal":"BUY"
   }
 ]
