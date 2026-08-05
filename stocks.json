@@ -1,32 +1,90 @@
 [
   {
-    "symbol":"RELIANCE",
-    "sector":"Oil & Gas",
-    "score":92,
-    "signal":"BUY"
+    "symbol": "RELIANCE",
+    "sector": "Oil & Gas",
+    "score": 92,
+    "signal": "STRONG BUY",
+    "rsi": 68,
+    "volume": "2.8M",
+    "entry": 3120,
+    "target": 3190,
+    "sl": 3085
   },
   {
-    "symbol":"TCS",
-    "sector":"IT",
-    "score":91,
-    "signal":"BUY"
+    "symbol": "TCS",
+    "sector": "IT",
+    "score": 91,
+    "signal": "STRONG BUY",
+    "rsi": 66,
+    "volume": "1.2M",
+    "entry": 4550,
+    "target": 4625,
+    "sl": 4500
   },
   {
-    "symbol":"HDFCBANK",
-    "sector":"Banking",
-    "score":89,
-    "signal":"BUY"
+    "symbol": "HDFCBANK",
+    "sector": "Banking",
+    "score": 89,
+    "signal": "BUY",
+    "rsi": 63,
+    "volume": "4.1M",
+    "entry": 2110,
+    "target": 2155,
+    "sl": 2085
   },
   {
-    "symbol":"SBIN",
-    "sector":"Banking",
-    "score":87,
-    "signal":"BUY"
+    "symbol": "SBIN",
+    "sector": "Banking",
+    "score": 87,
+    "signal": "BUY",
+    "rsi": 61,
+    "volume": "5.4M",
+    "entry": 905,
+    "target": 925,
+    "sl": 892
   },
   {
-    "symbol":"BEL",
-    "sector":"Defence",
-    "score":84,
-    "signal":"BUY"
+    "symbol": "BEL",
+    "sector": "Defence",
+    "score": 84,
+    "signal": "BUY",
+    "rsi": 59,
+    "volume": "3.6M",
+    "entry": 432,
+    "target": 445,
+    "sl": 424
+  },
+  {
+    "symbol": "INFY",
+    "sector": "IT",
+    "score": 45,
+    "signal": "SELL",
+    "rsi": 38,
+    "volume": "1.8M",
+    "entry": 1540,
+    "target": 1500,
+    "sl": 1565
+  },
+  {
+    "symbol": "WIPRO",
+    "sector": "IT",
+    "score": 42,
+    "signal": "SELL",
+    "rsi": 36,
+    "volume": "980K",
+    "entry": 298,
+    "target": 288,
+    "sl": 304
+  },
+  {
+    "symbol": "ONGC",
+    "sector": "Oil & Gas",
+    "score": 39,
+    "signal": "STRONG SELL",
+    "rsi": 33,
+    "volume": "6.2M",
+    "entry": 251,
+    "target": 242,
+    "sl": 256
   }
 ]
