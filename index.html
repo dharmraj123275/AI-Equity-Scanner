@@ -9,85 +9,83 @@
 <link rel="stylesheet" href="style.css">
 
 </head>
-
 <body>
 
 <div class="container">
 
-    <div class="header">
-        <h1>📈 AI Equity Scanner Pro</h1>
-        <p>NSE • SME • ETF • AI Scanner</p>
-    </div>
+<div class="header">
+<h1>📈 AI Equity Scanner Pro</h1>
+<p>NSE • SME • ETF • AI Scanner</p>
+</div>
 
-    <div class="card">
-        <h2>📊 Market Status</h2>
+<div class="card">
+<h2>📊 Market Status</h2>
 
-        <div class="status">
-            <span>🟢 Nifty</span>
-            <span id="niftyTrend">Bullish</span>
-        </div>
+<div class="status">
+<span>🟢 Nifty</span>
+<span id="niftyTrend">Bullish</span>
+</div>
 
-        <div class="status">
-            <span>🟢 Bank Nifty</span>
-            <span id="bankTrend">Bullish</span>
-        </div>
+<div class="status">
+<span>🟢 Bank Nifty</span>
+<span id="bankTrend">Bullish</span>
+</div>
 
-        <div class="status">
-            <span>🕒 Last Scan</span>
-            <span id="lastScan">Waiting...</span>
-        </div>
+<div class="status">
+<span>🕒 Last Scan</span>
+<span id="lastScan">Waiting...</span>
+</div>
 
-    </div>
+</div>
 
-    <div class="card">
+<div class="card">
 
-        <input
-            type="text"
-            id="searchBox"
-            placeholder="Search Stock..."
-        >
+<input
+id="search"
+type="text"
+placeholder="🔍 Search Stock..."
+onkeyup="searchStock()">
 
-        <button onclick="scanMarket()">
-            🚀 Scan Market
-        </button>
+<button onclick="scanMarket()">
+🚀 Scan Market
+</button>
 
-    </div>
+</div>
 
-    <div class="card">
+<div class="card">
 
-        <h2>🔥 Top Strong Buy</h2>
+<h2>🔥 Top Strong Buy</h2>
 
-        <div id="buyList">
-            Waiting for Scan...
-        </div>
+<div id="buyList">
+Waiting for Scan...
+</div>
 
-    </div>
+</div>
 
-    <div class="card">
+<div class="card">
 
-        <h2>🔴 Top Strong Sell</h2>
+<h2>🔴 Top Strong Sell</h2>
 
-        <div id="sellList">
-            Waiting for Scan...
-        </div>
+<div id="sellList">
+Waiting for Scan...
+</div>
 
-    </div>
+</div>
 
-    <div class="footer">
-        Version 3.0<br>
-        Built by Dharmrajsinh
-    </div>
+<div class="footer">
+Version 3.0<br>
+Built by Dharmrajsinh
+</div>
 
 </div>
 
 <script>
-window.onload = function () {
-    scanMarket();
-};
+window.onload=function(){
+scanMarket();
+}
 </script>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
