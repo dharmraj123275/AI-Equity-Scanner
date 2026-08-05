@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.header h1{
+    font-size:36px;
+    font-weight:bold;
+}
+
+.header p{
+    color:#cbd5e1;
+    margin-top:8px;
+    font-size:18px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:18px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.market{
+    font-size:20px;
+    line-height:2;
+}
+
+.button{
+    width:100%;
+    background:#16a34a;
+    color:white;
+    border:none;
+    padding:18px;
+    border-radius:14px;
+    font-size:24px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#15803d;
+}
+
+.search{
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    border:none;
+    outline:none;
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.stock{
+    background:#111827;
+    border-left:6px solid #22c55e;
+    border-radius:14px;
+    padding:16px;
+    margin-top:15px;
+    transition:.3s;
+}
+
+.stock:hover{
+    transform:translateY(-3px);
+}
+
+.stock h3{
+    color:#22c55e;
+    margin-bottom:8px;
+    font-size:24px;
+}
+
+.score{
+    color:#fbbf24;
+    font-weight:bold;
+    margin-top:6px;
+}
+
+.buy{
+    color:#22c55e;
+    font-weight:bold;
+}
+
+.sell{
+    color:#ef4444;
+    font-weight:bold;
+}
+
+.hold{
+    color:#f59e0b;
+    font-weight:bold;
+}
+
+.info{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin-top:12px;
+}
+
+.box{
+    width:48%;
+    background:#0f172a;
+    padding:12px;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+.footer{
+    text-align:center;
+    color:#94a3b8;
+    margin:30px 0;
+}
+
+.loader{
+    width:40px;
+    height:40px;
+    border:5px solid #334155;
+    border-top:5px solid #22c55e;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin:25px auto;
+    display:none;
+}
+
+@keyframes spin{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+@media(max-width:600px){
+
+.header h1{
+    font-size:30px;
+}
+
+.button{
+    font-size:20px;
+}
+
+.stock h3{
+    font-size:20px;
+}
+
+.box{
+    width:100%;
+}
+}
