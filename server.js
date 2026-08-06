@@ -1,18 +1,28 @@
+require("dotenv").config();
+
 const express = require("express");
+const axios = require("axios");
+const cors = require("cors");
 
 const app = express();
-const PORT = process.env.PORT || 10000;
 
-app.use(express.static("."));
+app.use(cors());
+app.use(express.json());
 
-app.get("/api/status", (req, res) => {
-  res.json({
-    status: "Running",
-    market: "NSE",
-    scanner: "AI Equity Scanner Pro"
-  });
-});
+const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+const API_KEY = process.env.UPSTOX_API_KEY;
+const ACCESS_TOKEN = process.env.UPSTOX_ACCESS_TOKEN;
+
+const HEADERS = {
+    Authorization: `Bearer ${ACCESS_TOKEN}`,
+    Accept: "application/json"
+};
+
+app.get("/", (req, res) => {
+    res.json({
+        app: "AI Equity Scanner Pro",
+        status: "Running",
+        version: "4.0"
+    });
 });
